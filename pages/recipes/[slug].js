@@ -41,9 +41,11 @@ export default function RecipeDetails({recipe}) {
         <div>
             <h2>{title}</h2>
             <p>{cookingTime}</p>
-            {ingredients.map(ing => (
-                <span key={ing}>{ing}</span>
-            ))}
+            <div className="flex items-center gap-4">
+                {ingredients.map(ing => (
+                    <span key={ing} className="bg-sky-900 rounded-md p-2 text-white">#{ing}</span>
+                ))}
+            </div>
             <div>Methods
                 {documentToReactComponents(method)}
             </div>
