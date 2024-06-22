@@ -12,9 +12,9 @@ export default function RecipeCard({recipe}){
                        height={thumbnail.fields.file.details.image.height}/>
             </div>
             <div>
-                <h2>{title}</h2>
+                <h2 className="text-3xl text-slate-800 font-bold">{title}</h2>
                 <p>Takes approx {cookingTime}</p>
-                <Link href={'/recipes/' + slug}>Cook This</Link>
+                <Link href={'/recipes/' + slug}>Go To Website</Link>
             </div>
         </div>
     )

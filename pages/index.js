@@ -15,7 +15,7 @@ export  async function getStaticProps(){
 }
 export default function Recipes({recipes}) {
   return (
-    <div className="recipe-list">
+    <div className="recipe-list grid grid-cols-3 gap-4">
         {recipes.map(recipe => (
             <RecipeCard key={recipe.sys.id} recipe={recipe}/>
         ))}
