@@ -6,7 +6,7 @@ export default function RecipeCard({recipe}){
     return (
         <div>
             <div>
-                <Image src={'https:' + thumbnail.fields.file.url}
+                <Image className="rounded-md" src={'https:' + thumbnail.fields.file.url}
                        alt={title}
                        width={thumbnail.fields.file.details.image.width}
                        height={thumbnail.fields.file.details.image.height}/>
@@ -14,7 +14,7 @@ export default function RecipeCard({recipe}){
             <div>
                 <h2 className="text-3xl text-slate-800 font-bold">{title}</h2>
                 <p>Takes approx {cookingTime}</p>
-                <Link href={'/recipes/' + slug}>Go To Website</Link>
+                <Link href={'/recipes/' + slug}>Read More</Link>
             </div>
         </div>
     )
